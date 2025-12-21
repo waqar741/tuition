@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, FileText, Video, Download } from 'lucide-react';
+import { ArrowLeft, FileText, Video, Download, Users } from 'lucide-react';
 import './ClassPage.css';
 
 // Dummy Data Generator
@@ -22,18 +22,24 @@ export default function ClassPage() {
     return (
         <div className="page-container container py-10 pb-24">
             {/* Header / Nav Back */}
-            <div className="flex items-center gap-4 mb-8">
-                <Link to="/" className="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+            <div className="page-header">
+                <Link to="/" className="back-btn">
                     <ArrowLeft size={24} />
                 </Link>
-                <div>
-                    <h1 className="text-3xl font-bold text-primary">Class {standard}</h1>
-                    <p className="text-text-secondary">Study Material & Resources</p>
+                <div className="header-content">
+                    <h1 className="page-title">Class {standard}</h1>
+                    <p className="page-subtitle">Study Material & Resources</p>
+                </div>
+                <div className="header-contact-wrapper">
+                    <Link to="/contact" className="contact-btn-small">
+                        <Users size={18} />
+                        Contact Sir
+                    </Link>
                 </div>
             </div>
 
             {/* Subject Tabs */}
-            <div className="tabs-container mb-8">
+            <div className="tabs-container">
                 {subjects.map((sub) => (
                     <button
                         key={sub}

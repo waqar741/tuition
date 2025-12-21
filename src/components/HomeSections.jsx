@@ -29,9 +29,9 @@ export function Hero() {
                         Premium coaching for standards 6 to 10. We help students achieve academic excellence through personalized attention and innovative teaching methods.
                     </p>
                     <div className="hero-actions">
-                        <a href="#contact" className="hero-btn-primary">
-                            <MessageCircle size={20} />
-                            Contact Now
+                        <a href="tel:+919594499718" className="hero-btn-primary">
+                            <Phone size={20} />
+                            Quick Enquiry
                         </a>
                         <a href="#resources" className="hero-btn-secondary">
                             Start Learning

@@ -10,30 +10,36 @@
 .dock {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem;
+    gap: 0.35rem;
+    /* Balanced gap */
+    padding: 0.35rem;
+    /* Balanced padding */
     border-radius: 9999px;
-    /* Pill */
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 20px 40px -5px rgba(0, 0, 0, 0.3);
+    box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.05),
+        0 10px 20px -5px rgba(0, 0, 0, 0.4),
+        0 0 15px rgba(67, 97, 238, 0.1);
+    /* Subtle glow */
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    background: rgba(15, 23, 42, 0.6);
-    /* Darker glass backdrop */
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    /* Visible outerlining */
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(24px);
+    /* Higher blur for premium feel */
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 [data-theme="light"] .dock {
-    background: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 20px 40px -5px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.05),
+        0 10px 30px -10px rgba(0, 0, 0, 0.15),
+        0 0 15px rgba(67, 97, 238, 0.1);
 }
 
 [data-theme="dark"] .dock {
-    background: rgba(2, 6, 23, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 20px 40px -5px rgba(0, 0, 0, 0.5);
+    background: rgba(2, 6, 23, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .dock-item {
@@ -41,9 +47,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3rem;
-    /* Fixed width for better look */
-    height: 3rem;
+    width: 2rem;
+    /* Comfortable touch target but compact */
+    height: 2rem;
     padding: 0;
     color: var(--text-secondary);
     border-radius: 50%;
@@ -54,15 +60,19 @@
 
 .dock-item:hover {
     color: var(--color-primary);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     transform: translateY(-2px);
 }
 
+[data-theme="light"] .dock-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
 .dock-item.active {
-    background-color: var(--color-primary);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
     color: white;
     box-shadow: 0 4px 12px var(--color-shadow);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 [data-theme="light"] .dock-item.active {

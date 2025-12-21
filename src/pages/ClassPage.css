@@ -1,7 +1,70 @@
 .page-container {
     padding-top: 6rem;
-    /* Account for fixed header/logo if needed */
     min-height: 100vh;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.back-btn {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-btn:hover {
+    background-color: var(--bg-tertiary);
+}
+
+.header-content {
+    flex: 1;
+}
+
+.page-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.page-subtitle {
+    color: var(--text-secondary);
+    margin: 0;
+    font-size: 1rem;
+}
+
+.header-contact-wrapper {
+    margin-left: auto;
+}
+
+.contact-btn-small {
+    padding: 0.5rem 1rem;
+    background: var(--color-primary);
+    color: white;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    font-size: 0.9rem;
+}
+
+.contact-btn-small:hover {
+    opacity: 0.9;
 }
 
 .tabs-container {
@@ -11,6 +74,7 @@
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--border-color);
     scrollbar-width: none;
+    margin-bottom: 0.5rem;
     /* Hide scrollbar for cleaner look */
 }
 

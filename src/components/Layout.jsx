@@ -9,16 +9,16 @@ export default function Layout() {
     const phoneNumber = "9594499718";
     const whatsappUrl = `https://wa.me/91${phoneNumber}?text=${encodeURIComponent("Hello! Who is this?")}`;
 
-    // Logic to hide footer on class pages
+    // Logic to hide footer on class pages and contact page
     const location = useLocation();
-    const isClassPage = location.pathname.includes('/class/');
+    const shouldHideFooter = location.pathname.includes('/class/') || location.pathname === '/contact';
 
     return (
         <>
             <header className="top-header">
                 <div className="logo-container" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                     <img src="/android-chrome-512x512.png" alt="Future Tuition Logo" style={{ height: '48px', width: '48px' }} />
-                    <div className="logo-text" style={{ fontSize: '1.5rem' }}>Future Tuition Classes</div>
+                    <div className="logo-text" style={{ fontSize: '1.25rem', fontWeight: '800' }}>Future Tuition Classes</div>
                 </div>
                 <a
                     href={whatsappUrl}
@@ -36,7 +36,7 @@ export default function Layout() {
                 <Outlet />
             </main>
 
-            {!isClassPage && <Footer />}
+            {!shouldHideFooter && <Footer />}
             <Header />
         </>
     );

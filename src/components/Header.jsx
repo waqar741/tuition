@@ -15,15 +15,15 @@ export default function Header() {
                     className={({ isActive }) => `dock-item ${isActive ? 'active' : ''}`}
                     title="Home"
                 >
-                    <Home size={20} />
+                    <Home size={16} />
                 </NavLink>
 
                 <a href="#about" className="dock-item" title="About">
-                    <Info size={20} />
+                    <Info size={16} />
                 </a>
 
                 <a href="#resources" className="dock-item" title="Resource Hub">
-                    <BookOpen size={20} />
+                    <BookOpen size={16} />
                 </a>
 
                 <div className="dock-divider"></div>
@@ -33,7 +33,7 @@ export default function Header() {
                     className="dock-item"
                     title="Toggle Theme"
                 >
-                    {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+                    {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
                 </button>
             </nav>
         </div>

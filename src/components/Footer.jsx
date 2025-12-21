@@ -28,7 +28,7 @@ export default function Footer() {
                 <div className="footer-main" style={{ display: 'grid', gap: '2rem', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', marginBottom: '2rem' }}>
                     <div className="footer-brand">
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
-                            <img src="/favicon.ico" alt="Logo" style={{ height: '32px', width: '32px' }} />
+                            <img src="/android-chrome-512x512.png" alt="Logo" style={{ height: '32px', width: '32px' }} />
                             <h3 className="footer-title" style={{ fontSize: '1.5rem', fontWeight: '700', color: 'var(--color-primary)', margin: 0 }}>Future Tuition Classes</h3>
                         </div>
                         <p className="footer-tagline" style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem', lineHeight: '1.6' }}>
@@ -43,7 +43,7 @@ export default function Footer() {
                                     aria-label={social.label}
                                     style={{
                                         width: '2.5rem', height: '2.5rem', borderRadius: '0.5rem',
-                                        background: 'white', border: '1px solid var(--border-color)',
+                                        background: 'var(--bg-tertiary)', border: '1px solid var(--border-color)',
                                         display: 'flex', alignItems: 'center', justifyContent: 'center',
                                         color: 'var(--color-text)', transition: 'all 0.3s ease'
                                     }}

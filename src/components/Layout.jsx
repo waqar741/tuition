@@ -17,8 +17,7 @@ export default function Layout() {
         <>
             <header className="top-header">
                 <div className="logo-container" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                    <img src="/android-chrome-512x512.png" alt="Future Tuition Logo" style={{ height: '48px', width: '48px' }} />
-                    <div className="logo-text" style={{ fontSize: '1.25rem', fontWeight: '800' }}>Future Tuition Classes</div>
+                    <img src="/android-chrome-512x512.png" alt="Future Tuition Logo" style={{ height: '56px', width: '56px' }} />
                 </div>
                 <a
                     href={whatsappUrl}

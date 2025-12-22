@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'; // Added useEffect
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, FileText, Video, Download, Users, Loader2 } from 'lucide-react'; // Added Loader2
+import { ArrowLeft, FileText, Video, Download, Users, Loader2, ExternalLink } from 'lucide-react'; // Added ExternalLink
 import { dataService } from '../services/dataService'; // Import dataService
 import './ClassPage.css';
 
@@ -33,7 +33,17 @@ export default function ClassPage() {
                     <h1 className="page-title">Class {standard}</h1>
                     <p className="page-subtitle">Study Material & Resources</p>
                 </div>
-                <div className="header-contact-wrapper">
+                <div className="header-contact-wrapper flex gap-3">
+                    <a
+                        href="https://smartnotesfuture.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="contact-btn-small"
+                        style={{ backgroundColor: 'var(--color-secondary)' }}
+                    >
+                        <ExternalLink size={18} />
+                        Smart Notes
+                    </a>
                     <Link to="/contact" className="contact-btn-small">
                         <Users size={18} />
                         Contact Sir

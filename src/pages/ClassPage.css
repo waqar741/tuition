@@ -47,6 +47,9 @@
 
 .header-contact-wrapper {
     margin-left: auto;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .contact-btn-small {

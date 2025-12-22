@@ -1,7 +1,7 @@
 /* Floating Dock at Bottom */
 .dock-container {
     position: fixed;
-    bottom: 1.5rem;
+    bottom: 0.5rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;

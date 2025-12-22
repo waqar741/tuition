@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Info, Smartphone, BookOpen, Sun, Moon } from 'lucide-react';
+import { Home, Info, Smartphone, BookOpen, Sun, Moon, ExternalLink } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
@@ -24,6 +24,16 @@ export default function Header() {
 
                 <a href="#resources" className="dock-item" title="Resource Hub">
                     <BookOpen size={16} />
+                </a>
+
+                <a
+                    href="https://smartnotesfuture.vercel.app/"
+                    className="dock-item"
+                    title="Smart Notes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <ExternalLink size={16} />
                 </a>
 
                 <div className="dock-divider"></div>

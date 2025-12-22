@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send } from 'lucide-react';
+import { Send, ExternalLink } from 'lucide-react';
 import './Contact.css';
 
 export default function ContactPage() {
@@ -120,6 +120,7 @@ export default function ContactPage() {
                     )}
                 </form>
             </div>
+
         </div>
     );
 }

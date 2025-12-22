@@ -27,7 +27,7 @@ export const dataService = {
             subject: metadata.subject,
             type: 'PDF',
             date: new Date().toISOString().split('T')[0],
-            url: `/materials/class${metadata.standard}/${metadata.subject.toLowerCase()}/${metadata.fileName}`
+            url: `/materials/class${metadata.standard}/${metadata.subject.toLowerCase()}/${metadata.fileName.endsWith('.pdf') ? metadata.fileName : metadata.fileName + '.pdf'}`
         };
     }
 };

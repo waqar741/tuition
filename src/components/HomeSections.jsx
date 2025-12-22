@@ -26,8 +26,7 @@ export function Hero() {
                         <span className="hero-highlight">Classes</span>
                     </h1>
                     <p className="hero-subtitle">
-                        Premium coaching for standards 6 to 10. We help students achieve academic excellence through personalized attention and innovative teaching methods.
-                    </p>
+                        Focused coaching for KG to Standard 10. We prioritize strong basics, regular practice, and personal guidance to help every student improve their results.                    </p>
                     <div className="hero-actions">
                         <a href="tel:+919594499718" className="hero-btn-primary">
                             <Phone size={20} />
@@ -42,17 +41,17 @@ export function Hero() {
                     {/* Stats */}
                     <div className="hero-stats">
                         <div className="hero-stat">
-                            <div className="stat-number">98%</div>
+                            <div className="stat-number">90%</div>
                             <div className="stat-label">Success Rate</div>
                         </div>
                         <div className="hero-stat-divider"></div>
                         <div className="hero-stat">
-                            <div className="stat-number">500+</div>
+                            <div className="stat-number">100+</div>
                             <div className="stat-label">Students</div>
                         </div>
                         <div className="hero-stat-divider"></div>
                         <div className="hero-stat">
-                            <div className="stat-number">10+</div>
+                            <div className="stat-number">5+</div>
                             <div className="stat-label">Years Experience</div>
                         </div>
                     </div>
@@ -64,10 +63,10 @@ export function Hero() {
 
 export function Toppers() {
     const toppers = [
-        { name: "Rahul S.", percent: "98.5%", std: "10th", achievement: "School Topper" },
-        { name: "Priya M.", percent: "97.2%", std: "10th", achievement: "Math Olympiad" },
-        { name: "Amit K.", percent: "96.8%", std: "10th", achievement: "Science Whiz" },
-        { name: "Sneha R.", percent: "99.0%", std: "9th", achievement: "Perfect Score" },
+        { name: "", percent: "", std: "10th", achievement: "" },
+        { name: "", percent: "", std: "10th", achievement: "" },
+        { name: "", percent: "", std: "10th", achievement: "" },
+        { name: "", percent: "", std: "10th", achievement: "" },
     ];
 
     return (
@@ -95,7 +94,7 @@ export function Toppers() {
                                 <h3 className="topper-name">{t.name}</h3>
                                 <div className="topper-details">
                                     <span className="topper-std">Class {t.std}</span>
-                                    <span className="topper-achievement">{t.achievement}</span>
+                                    {/* <span className="topper-achievement">{t.achievement}</span> */}
                                 </div>
                             </div>
                         </div>

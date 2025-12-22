@@ -164,11 +164,11 @@ export function About() {
 
 export function ResourceHub() {
     const standards = [
-        { std: 6, subjects: 5, icon: "🔢" },
-        { std: 7, subjects: 6, icon: "🧪" },
-        { std: 8, subjects: 7, icon: "📚" },
-        { std: 9, subjects: 8, icon: "⚡" },
-        { std: 10, subjects: 8, icon: "🎯" }
+        { std: 6, subjects: 4, icon: "🔢" },
+        { std: 7, subjects: 4, icon: "🧪" },
+        { std: 8, subjects: 4, icon: "📚" },
+        { std: 9, subjects: 4, icon: "⚡" },
+        { std: 10, subjects: 4, icon: "🎯" }
     ];
 
     return (

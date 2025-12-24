@@ -27,7 +27,7 @@ export default function Header() {
                 </a>
 
                 <a
-                    href="https://smartnotesfuture.vercel.app/"
+                    href="https://smartnote.vercel.app/"
                     className="dock-item"
                     title="Smart Notes"
                     target="_blank"

@@ -22,7 +22,7 @@ export function Hero() {
                         <span>Empowering Future Leaders</span>
                     </div>
                     <h1 className="hero-title">
-                        Future Tuition
+                        Study
                         <span className="hero-highlight">Classes</span>
                     </h1>
                     <p className="hero-subtitle">

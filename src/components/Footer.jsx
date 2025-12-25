@@ -104,46 +104,14 @@ export default function Footer() {
                         <div className="dev-toggle-content" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-text-secondary)', fontSize: '0.875rem' }}>
                             <span>👨‍💻 Built with passion by </span>
                             <span className="dev-name" style={{ fontWeight: '600', color: 'var(--color-primary)' }}>Ahmed Shaikh</span>
-                            <ChevronRight size={16} style={{ transform: developerInfo ? 'rotate(90deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }} />
                         </div>
                     </button>
-
-                    {developerInfo && (
-                        <div className="dev-info" style={{ marginTop: '1rem', animation: 'slideDown 0.3s ease' }}>
-                            <div className="dev-card" style={{ background: 'var(--color-surface)', borderRadius: '1rem', padding: '1.5rem', border: '1px solid var(--border-color)', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', maxWidth: '500px', margin: '0 auto' }}>
-                                <div className="dev-header" style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-                                    <div className="dev-avatar" style={{ width: '3rem', height: '3rem', background: 'linear-gradient(135deg, #4361ee, #3a86ff)', borderRadius: '0.75rem', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white' }}>
-                                        <Sparkles size={24} />
-                                    </div>
-                                    <div style={{ textAlign: 'left' }}>
-                                        <h4 className="dev-title" style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: '0.25rem', color: 'var(--color-text)' }}>Ahmed Shaikh</h4>
-                                        <p className="dev-subtitle" style={{ fontSize: '0.875rem', color: 'var(--color-text-secondary)' }}>Full Stack Developer</p>
-                                    </div>
-                                </div>
-                                <div className="dev-tech" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '1rem' }}>
-                                    {['React', 'Node.js', 'UI/UX', 'Modern Web'].map(tech => (
-                                        <span key={tech} className="tech-badge" style={{ padding: '0.25rem 0.75rem', background: 'var(--bg-tertiary)', borderRadius: '1rem', fontSize: '0.75rem', fontWeight: '500', color: 'var(--color-primary)' }}>{tech}</span>
-                                    ))}
-                                </div>
-                                <p className="dev-message" style={{ color: 'var(--color-text-secondary)', lineHeight: '1.6', marginBottom: '1.5rem', textAlign: 'left' }}>
-                                    Crafting digital experiences with code and creativity. Check out my portfolio for more projects.
-                                </p>
-                                <div className="dev-actions" style={{ display: 'flex', gap: '0.75rem' }}>
-                                    {/* Portfolio link removed as per request */}
-                                    <button className="dev-btn" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', padding: '0.75rem 1rem', borderRadius: '0.75rem', border: '1px solid var(--border-color)', background: 'var(--bg-tertiary)', color: 'var(--color-text)', fontWeight: '500', cursor: 'default', textDecoration: 'none' }}>
-                                        <Sparkles size={16} />
-                                        Full Stack Dev
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    )}
                 </div>
 
                 {/* Copyright */}
                 <div className="footer-bottom" style={{ textAlign: 'center', paddingTop: '2rem', borderTop: '1px solid var(--border-color)' }}>
                     <p className="copyright" style={{ color: 'var(--color-text-secondary)', fontSize: '0.875rem', marginBottom: '0.5rem' }}>
-                        © {new Date().getFullYear()} Future Tuition Classes. All rights reserved.
+                        © {new Date().getFullYear()} Study Classes. All rights reserved.
                     </p>
                     <p className="made-with" style={{ color: 'var(--color-text-secondary)', fontSize: '0.75rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.25rem' }}>
                         Made with <Heart size={12} fill="red" color="red" />

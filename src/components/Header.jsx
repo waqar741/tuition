@@ -19,7 +19,7 @@ export default function Header() {
                 </NavLink>
 
                 <a href="#about" className="dock-item" title="About">
-                    <Info size={16} />
+                    <Smartphone size={16} />
                 </a>
 
                 <a href="#resources" className="dock-item" title="Resource Hub">
